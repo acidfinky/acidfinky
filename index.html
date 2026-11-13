@@ -70,9 +70,9 @@ const SITE = {
   photo: "images/press.jpg",
   photoCaption: "Photo: add credit here",
   bio: [
-    "Alissa Kaina Fink is a Berlin-based sound artist, DJ and cultural producer, performing as Acidfinky. Trained in Physics, she works with sound as both material and structure. Her sets and productions, which she describes as crispy sounds, pair heavy basslines with sharp drums. She also creates sound design for commercial and campaign work, including for Ableton and HOKA.",
-    "Her practice is interdisciplinary. She produces events, curates radio, coordinates programs, handles communications and teaches, always with artist care and awareness at the centre. She is a member of the feminist collective BLVSH, a curator at THF Radio, and the founder of the independent label Twisting Knobs Records. She currently works in PR and communications at Music Change Germany (previously Music Women* Germany).",
-    "Working with young people and refugees is central to her practice. She leads DJ and music production courses and radio workshops for young refugees, minors and underrepresented genders in Berlin, Cairo and Riga. Her work is shaped by migration, diversity and cross-cultural exchange."
+    "I'm Alissa Kaina Fink, a Paris-based sound artist, DJ and cultural producer performing as Acidfinky. With a background in Physics, I approach sound as both material and structure. My DJ sets and productions, which I describe as crispy sounds, combine heavy basslines, sharp drums and distinctive textures. I also work in sound design for commercial and audiovisual projects.",
+    "Alongside my artistic practice, I work across event production, curation, radio, communications and education, with a focus on artist care and inclusive cultural spaces. I founded the independent label Twisting Knobs Records and Maison Sōt, an interdisciplinary series between Berlin and Cairo, and I currently work in PR and communications at Music Change Germany. Until September 2026 I was a curator at THF Radio and a member of the feminist collective BLVSH.",
+    "Education and community work are an important part of my practice. I lead DJ, music production and radio workshops for young people, refugees and underrepresented genders in different cultural and international contexts. My work is shaped by an interest in migration, diversity and cross-cultural exchange."
   ]
 };
 
@@ -80,6 +80,8 @@ const PAGES = [
  { id:"events", title:"Events & Production",
    intro:"Community-based and fundraising events, produced with attention to artist care and awareness.",
    items:[
+   { date:"2026", place:"", title:"Intentional Listening", role:"Producer",
+     text:["Produced three events around intentional listening."], links:[], images:[], video:"" },
    { date:"Jul 2024, Oct 2024, Apr 2025", place:"Berlin", title:"Solidarity Events", role:"Organiser & Producer",
      text:["Interdisciplinary fundraising events with international artists from the SWANA region.","Event planning, logistics, artist coordination, hospitality and artist care. Awareness-sensitive event concepts."],
      links:[], images:[], video:"" },
@@ -91,13 +93,15 @@ const PAGES = [
      text:["Curated showcases for the digital festival COMMON on currents.fm."], links:[], images:[], video:"" }
  ]},
  { id:"platforms", title:"Platforms, Collectives & Label",
-   intro:"Ongoing work with radio, collectives and my own label.",
+   intro:"Radio, collectives, and my own label and event series.",
    items:[
+   { date:"2026 – present", place:"Berlin / Cairo", title:"Maison Sōt", role:"Founder",
+     text:["An interdisciplinary series between Berlin and Cairo for music, art, food and workshops. Its first public event was a women-only Ableton Live workshop in Cairo with Dhamma, followed by an evening at arkaoda Berlin."], links:[], images:[], video:"" },
    { date:"Jan 2023 – present", place:"Berlin", title:"Twisting Knobs Records", role:"Founder",
      text:["Self-funded independent label."], links:[], images:[], video:"" },
-   { date:"Jan 2021 – present", place:"Berlin", title:"THF Radio", role:"Curator & Organiser (voluntary)",
+   { date:"Jan 2021 – Sep 2026", place:"Berlin", title:"THF Radio", role:"Curator & Organiser (voluntary)",
      text:["Curatorial and organisational work at a community-based, diversity-focused radio station. Coordination with artists, collectives and community initiatives.","Vinyl DJ workshops for underrepresented genders and BIPOC individuals. Radio production workshops for minors with refugee background."], links:[], images:[], video:"" },
-   { date:"Jun 2020 – present", place:"Berlin", title:"BLVSH", role:"Event Producer & Organiser (voluntary)",
+   { date:"Jun 2020 – Sep 2026", place:"Berlin", title:"BLVSH", role:"Event Producer & Organiser (voluntary)",
      text:["Events, workshops and radio broadcasts. Awareness work and safer spaces for women, trans and non-binary artists."], links:[], images:[], video:"" }
  ]},
  { id:"communication", title:"Press & Communication",
@@ -159,7 +163,7 @@ const $ = s => document.querySelector(s);
 const nav = $("#nav"), main = $("#main");
 nav.innerHTML = PAGES.map(p => `<a href="#${p.id}" data-id="${p.id}">${p.title}</a>`).join("") +
   `<a href="#contact" data-id="contact">Contact</a>`;
-$("#foot").innerHTML = `${SITE.name}, Berlin`;
+$("#foot").innerHTML = `${SITE.name}, Paris`;
 
 function media(it){
   let h = (it.images||[]).map(s => `<img src="${s}" alt="${it.title}" loading="lazy">`).join("");
