@@ -69,6 +69,7 @@ const SITE = {
   /* Press photo: put your file in the "images" folder and keep this name, or change it. Leave "" to hide. */
   photo: "images/press.jpg",
   photoCaption: "Photo: add credit here",
+  links: [["SoundCloud","https://soundcloud.com/acidfinky"],["Instagram","https://www.instagram.com/acidfinky/"],["Bandcamp","https://twistingknobsrecords.bandcamp.com/music"],["Resident Advisor","https://ra.co/dj/acidfinky"]],
   bio: [
     "I'm Alissa Kaina Fink, a Paris-based sound artist, DJ and cultural producer performing as Acidfinky. With a background in Physics, I approach sound as both material and structure. My DJ sets and productions, which I describe as crispy sounds, combine heavy basslines, sharp drums and distinctive textures. I also work in sound design for commercial and audiovisual projects.",
     "Alongside my artistic practice, I work across event production, curation, radio, communications and education, with a focus on artist care and inclusive cultural spaces. I founded the independent label Twisting Knobs Records and Maison Sōt, an interdisciplinary series between Berlin and Cairo, and I currently work in PR and communications at Music Change Germany. Until September 2026 I was a curator at THF Radio and a member of the feminist collective BLVSH.",
@@ -96,13 +97,13 @@ const PAGES = [
    intro:"Radio, collectives, and my own label and event series.",
    items:[
    { date:"2026 – present", place:"Berlin / Cairo", title:"Maison Sōt", role:"Founder",
-     text:["An interdisciplinary series between Berlin and Cairo for music, art, food and workshops. Its first public event was a women-only Ableton Live workshop in Cairo with Dhamma, followed by an evening at arkaoda Berlin."], links:[], images:[], video:"" },
+     text:["An interdisciplinary series between Berlin and Cairo for music, art, food and workshops. Its first public event was a women-only Ableton Live workshop in Cairo with Dhamma, followed by an evening at arkaoda Berlin."], links:[["Instagram","https://www.instagram.com/maison_sot/"],["Article","https://mixmagmena.com/read/a-women-only-ableton-live-workshop-took-place-in-cairo-news"]], images:[], video:"" },
    { date:"Jan 2023 – present", place:"Berlin", title:"Twisting Knobs Records", role:"Founder",
-     text:["Self-funded independent label."], links:[], images:[], video:"" },
+     text:["Self-funded independent label."], links:[["Instagram","https://www.instagram.com/twistingknobsrecords/"],["Bandcamp","https://twistingknobsrecords.bandcamp.com/music"]], images:[], video:"" },
    { date:"Jan 2021 – Sep 2026", place:"Berlin", title:"THF Radio", role:"Curator & Organiser (voluntary)",
      text:["Curatorial and organisational work at a community-based, diversity-focused radio station. Coordination with artists, collectives and community initiatives.","Vinyl DJ workshops for underrepresented genders and BIPOC individuals. Radio production workshops for minors with refugee background."], links:[], images:[], video:"" },
    { date:"Jun 2020 – Sep 2026", place:"Berlin", title:"BLVSH", role:"Event Producer & Organiser (voluntary)",
-     text:["Events, workshops and radio broadcasts. Awareness work and safer spaces for women, trans and non-binary artists."], links:[], images:[], video:"" }
+     text:["Events, workshops and radio broadcasts. Awareness work and safer spaces for women, trans and non-binary artists."], links:[["Instagram","https://www.instagram.com/blvsh.berlin/"]], images:[], video:"" }
  ]},
  { id:"communication", title:"Press & Communication",
    intro:"Communication, press and video work for music organisations and labels.",
@@ -110,17 +111,19 @@ const PAGES = [
    { date:"2026", place:"Berlin", title:"Low End Therapy Records", role:"Video editing and reels",
      text:["Video editing and short-form reels for the label."], links:[], images:[], video:"" },
    { date:"Apr 2025 – present", place:"Berlin", title:"Music Change Germany (previously Music Women* Germany)", role:"PR & Communications (paid)",
-     text:["Responsible for all social media, including social media strategy. Video editing, website, editorial work and press.","Occasional workshop coordination."], links:[], images:[], video:"" }
+     text:["Responsible for all social media, including social media strategy. Video editing, website, editorial work and press.","Occasional workshop coordination."], links:[["Instagram","https://www.instagram.com/musicchangegermany/"]], images:[], video:"" }
  ]},
  { id:"teaching", title:"Workshops & Mentoring",
    intro:"Courses and workshops I teach, mostly for women, trans and non-binary people and young refugees.",
    items:[
+   { date:"Jun 2026", place:"Berlin", title:"Berlin School of Sound", role:"Instructor",
+     text:["Beginner DJ workshop."], links:[["More info","https://www.berlinschoolofsound.com/about/our-teachers-berlin-school-of-sound/acidfinky-dj/"]], images:[], video:"" },
    { date:"May 2026", place:"Berlin", title:"Open Music Lab / Hejmo", role:"Mentor. Supported by Ableton",
-     text:["4-week beginner music production course using Ableton Live."], links:[], images:[], video:"" },
+     text:["4-week beginner music production course using Ableton Live."], links:[["Article","https://www.hejmoberlin.org/en/magazine/acidfinky-on-building-creative-confidence"]], images:[], video:"" },
    { date:"Dec 2025 – Apr 2026", place:"Berlin", title:"Sound Sisters", role:"Mentor. Supported by SoundCloud",
      text:["Beginner DJ course for young female refugees (ages 13–21) living in Schöneberg."], links:[], images:[], video:"" },
    { date:"Dec 2025 – Jan 2026", place:"Cairo", title:"Maison Sōt x Dhamma", role:"Organiser and mentor. Supported by Ableton",
-     text:["Beginner music production course for women based in Cairo."], links:[], images:[], video:"" },
+     text:["Beginner music production course for women based in Cairo."], links:[["Article","https://mixmagmena.com/read/a-women-only-ableton-live-workshop-took-place-in-cairo-news"]], images:[], video:"" },
    { date:"Nov 2025", place:"Riga", title:"Klik-Klak", role:"Mentor",
      text:["Introductory music production course using Ableton Live."], links:[], images:[], video:"" },
    { date:"Oct 2023", place:"Berlin", title:"Tag der Clubkultur", role:"Instructor",
@@ -132,11 +135,11 @@ const PAGES = [
    intro:"Commissioned sound design and original sound elements.",
    items:[
    { date:"May 2026", place:"", title:"NWNW x Hoka", role:"Sound Designer",
-     text:["Sound design for social media video footage, with cousin cousin Filmproduktion."], links:[], images:[], video:"" },
+     text:["Sound design for social media video footage, with cousin cousin Filmproduktion."], links:[["Watch","https://vimeo.com/1212693909"]], images:[], video:"https://player.vimeo.com/video/1212693909" },
    { date:"Oct 2025", place:"", title:"NWNW x Hoka", role:"Sound Designer",
      text:["Sound design for social media video content."], links:[], images:[], video:"" },
    { date:"Nov 2024", place:"", title:"Ableton", role:"Sound Designer",
-     text:["Original sound elements for an official Ableton commercial campaign."], links:[], images:[], video:"" }
+     text:["Original sound elements for an official Ableton commercial campaign."], links:[["Watch","https://www.youtube.com/watch?v=39yM0iJwOf0"]], images:[], video:"https://www.youtube.com/embed/39yM0iJwOf0" }
  ]},
  { id:"learning", title:"Programs & Learning",
    intro:"Programs and communities I took part in as a mentee or member.",
@@ -153,6 +156,34 @@ const PAGES = [
      text:["UK-based music production program for women."], links:[], images:[], video:"" },
    { date:"Mar – Aug 2020", place:"Berlin", title:"SPOON", role:"Member",
      text:["Vinyl DJ community and workspace for women, trans and non-binary individuals."], links:[], images:[], video:"" }
+ ]},
+ { id:"press", title:"Press",
+   intro:"Features, interviews and radio shows.",
+   items:[
+ { date:"Article", place:"Loop Rituals", title:"Up and Coming: Acidfinky", role:"Feature",
+     text:["Feature on bass, percussion and ear candy."], links:[["Read","https://looprituals.de/up-and-coming-acidfinky-bass-percussions-und-ganz-viel-ear-candy/"]], images:[], video:"" },
+ { date:"Article", place:"Seven.Berlin", title:"Acidfinky: Dub, Ear Candy and a Gentle Wandering Journey", role:"Feature",
+     text:[""], links:[["Read","https://seven.berlin/news/acidfinky-dub-ear-candy-and-a-gentle-wandering-journey/"]], images:[], video:"" },
+ { date:"Mar 2024", place:"Groove", title:"Groove Podcast 411", role:"Podcast",
+     text:[""], links:[["Listen","https://groove.de/2024/03/15/acidfinky-groove-podcast-411/"]], images:[], video:"" },
+ { date:"Article", place:"Hejmo Berlin", title:"Acidfinky on Building Creative Confidence", role:"Magazine",
+     text:[""], links:[["Read","https://www.hejmoberlin.org/en/magazine/acidfinky-on-building-creative-confidence"]], images:[], video:"" },
+ { date:"Profile", place:"Berlin School of Sound", title:"Acidfinky, DJ Teacher", role:"Teacher profile",
+     text:[""], links:[["Read","https://www.berlinschoolofsound.com/about/our-teachers-berlin-school-of-sound/acidfinky-dj/"]], images:[], video:"" },
+ { date:"Radio show", place:"Refuge Worldwide", title:"The Breakfast Show: HOKA Half Marathon Special", role:"Guest",
+     text:[""], links:[["Listen","https://refugeworldwide.com/radio/the-breakfast-show-hokas-half-marathon-special"]], images:[], video:"" },
+ { date:"20 Feb 2026", place:"Refuge Worldwide", title:"Dig Deep with Shiru Shush", role:"Radio show on running labels",
+     text:[""], links:[["Listen","https://refugeworldwide.com/radio/dig-deep-acidfinky-shiru-shush-20-feb-2026"]], images:[], video:"" }
+ ]},
+ { id:"streams", title:"Streams",
+   intro:"Latest streams and shows.",
+   items:[
+ { date:"Stream", place:"", title:"Mudd", role:"Show",
+     text:[""], links:[["Watch","https://www.youtube.com/watch?v=lhOJowM-8ho"]], images:[], video:"https://www.youtube.com/embed/lhOJowM-8ho" },
+ { date:"Stream", place:"", title:"Rinse", role:"Show",
+     text:[""], links:[["Watch","https://www.youtube.com/watch?v=RQaYH5AQVTU"]], images:[], video:"https://www.youtube.com/embed/RQaYH5AQVTU" },
+ { date:"Stream", place:"", title:"Seven", role:"Show",
+     text:[""], links:[["Watch","https://www.youtube.com/watch?v=aJZvGIk8cp8"]], images:[], video:"https://www.youtube.com/embed/aJZvGIk8cp8" }
  ]}
 ];
 
@@ -177,10 +208,11 @@ function media(it){
 function item(it){
   const links = (it.links||[]).length ? `<div class="links">${it.links.map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${l[0]}</a>`).join("")}</div>` : "";
   return `<article class="item">
-    <div class="meta type">${it.date}${it.place ? "<br>"+it.place : ""}</div>
-    <div><h2>${it.title}</h2><p class="role type">${it.role}</p>
-    ${it.text.map(t=>`<p>${t}</p>`).join("")}${links}${media(it)}</div></article>`;
+    <div class="meta type">${[it.date,it.place].filter(Boolean).join("<br>")}</div>
+    <div><h2>${it.title}</h2>${it.role ? `<p class="role type">${it.role}</p>` : ""}
+    ${it.text.filter(Boolean).map(t=>`<p>${t}</p>`).join("")}${links}${media(it)}</div></article>`;
 }
+const linkRow = () => SITE.links.map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${l[0]}</a>`).join("");
 function render(){
   const id = (location.hash || "#home").slice(1);
   const page = PAGES.find(p => p.id === id);
@@ -190,12 +222,12 @@ function render(){
     main.innerHTML = `<h1>${page.title}</h1><p class="intro">${page.intro}</p>${page.items.map(item).join("")}`;
   } else if(id === "contact"){
     document.title = `Contact – ${SITE.name}`;
-    main.innerHTML = `<h1>Contact</h1><p class="intro"><a href="mailto:${SITE.email}">${SITE.email}</a></p>`;
+    main.innerHTML = `<h1>Contact</h1><p class="intro"><a href="mailto:${SITE.email}">${SITE.email}</a></p><div class="links">${linkRow()}</div>`;
   } else {
     document.title = SITE.name;
     const pic = SITE.photo ? `<figure class="pic"><img src="${SITE.photo}" alt="${SITE.name}" onerror="this.closest('figure').remove()"><figcaption class="type">${SITE.photoCaption||""}</figcaption></figure>` : "";
     main.innerHTML = `<h1>${SITE.name}</h1>
-      <div class="home">${pic}<div class="bio">${SITE.bio.map(t=>`<p>${t}</p>`).join("")}</div></div>
+      <div class="home">${pic}<div class="bio">${SITE.bio.map(t=>`<p>${t}</p>`).join("")}<div class="links">${linkRow()}</div></div></div>
       <ul class="home-list">${PAGES.map(p=>`<li><a href="#${p.id}">${p.title}</a></li>`).join("")}<li><a href="#contact">Contact</a></li></ul>`;
   }
   window.scrollTo(0,0);
